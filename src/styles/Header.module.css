@@ -1,0 +1,19 @@
+.nav {
+  margin: 0;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+}
