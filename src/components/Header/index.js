@@ -18,7 +18,11 @@ const Header = () => {
       <ul className={`flex flex-row justify-end items-center gap-20 ${styles.nav}`}>
         {Object.keys(navigation).map((item, index) => {
           let className = 'hover:text-secondary hover:font-bold transition-all py-4';
-          return <li className={className}>{item}</li>;
+          return (
+            <li key={index} className={className}>
+              {item}
+            </li>
+          );
         })}
       </ul>
     </nav>
