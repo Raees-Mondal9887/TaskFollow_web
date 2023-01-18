@@ -22,7 +22,7 @@ const Home = () => {
               <FaTwitter className="hover:text-secondary transition-all duration-150 cursor-pointer" />
             </div>
             <h1 className="text-6xl mt-10 w-[600px] leading-tight">
-              Providing The Best Services & IT{' '}
+              XXXXXXXX Providing The Best Services & IT{' '}
               <span className="text-secondary relative">Solutions </span>
             </h1>
             <p>
