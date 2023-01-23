@@ -6,7 +6,9 @@ module.exports = {
       colors: {
         primary: '#1f2235',
         secondary: '#ff4a57',
-        'primary-light': '#283B51'
+        'primary-light': '#283B51',
+        smoke: '#F5F9FF',
+        blk: '#1F2235'
       },
       screens: {
         xs: { max: '515px' }
