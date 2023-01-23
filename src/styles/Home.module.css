@@ -37,12 +37,36 @@
   -webkit-text-fill-color: transparent;
 }
 
+.triangle{
+	width: 0;
+	height: 0;
+  background-color: #F5F9FF;
+	border-top: 35px solid transparent;
+	border-left: 40px solid #ff4a57;
+	border-bottom: 0px solid transparent;
+  border-bottom: solid 1px #333;
+  /* box-shadow: 0px 1px 0px #333; */
+}
+
 /* Mobile */
 @media (max-width: 700px) {
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
+@media (min-width: 350px) and (max-width: 614px) {
+  .banner{
+    height : 320px;
+    width: 370px;
+    margin-left: -18px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .info{
+    height : 800px;
+    width : 100%;
+  }
 }
 
 /* Thirteen */

@@ -3,8 +3,7 @@ import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import styles from '@/styles/Home.module.css';
 import { Header } from '@/components';
-import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa';
-import { codedHours, brainstormHours, completedProject } from '@/config';
+import { BsFacebook, BsInstagram, BsTwitter, BsYoutube, BsArrowRight } from 'react-icons/bs';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -12,62 +11,49 @@ const Home = () => {
   return (
     <>
       <Header />
-      <main className="px-10">
-        <div className="flex flex-row">
-          <div className="flex flex-1 flex-col justify-center">
-            <div className="flex flex-row gap-6 text-2xl cursor-pointer w-full justify-start">
-              <FaFacebookF className="hover:text-secondary transition-all duration-150 cursor-pointer" />
-              <FaInstagram className="hover:text-secondary transition-all duration-150 cursor-pointer" />
-              <FaYoutube className="hover:text-secondary transition-all duration-150 cursor-pointer" />
-              <FaTwitter className="hover:text-secondary transition-all duration-150 cursor-pointer" />
+      <main className="bg-smoke flex flex-col gap-10 h-full lg:max-h-[497px] py-3">
+        <div className="flex justify-center flex-col lg:flex-row px-5 md:pl-8">
+          <div
+            className={`flex flex-1 flex-col justify-evenly break-words w-full lg:w-[560px] gap-5 ${styles.info}`}
+          >
+            <div className="flex flex-row gap-4 text-2xl cursor-pointer w-full justify-start py-2 lg:py-0">
+              <BsFacebook className="text-slate-600 h-[28px] w-[28px] md:h-[33px] w-[33px] hover:text-secondary transition-all duration-150 cursor-pointer" />
+              <BsInstagram className="text-slate-600 h-[28px] w-[28px] md:h-[33px] w-[33px] hover:text-secondary transition-all duration-150 cursor-pointer" />
+              <BsTwitter className="text-slate-600 h-[28px] w-[28px] md:h-[33px] w-[33px] hover:text-secondary transition-all duration-150 cursor-pointer" />
+              <BsYoutube className="text-slate-600 h-[28px] w-[28px] md:h-[33px] w-[33px] hover:text-secondary transition-all duration-150 cursor-pointer" />
             </div>
-            <h1 className="text-6xl mt-10 w-[600px] leading-tight">
-              Providing The Best Services & IT{' '}
-              <span className="text-secondary relative">Solutions </span>
+            <h1 className="leading-tight font-normal max-w-[700px] lg:max-w-[500px] text-3xl sm:text-4xl">
+              We Make Sure We Deliver Best End-To-end Product Design And Development
             </h1>
-            <p>
+            <p className="text-gray-600 font-medium text-1xl max-w-[700px] lg:max-w-[560px]">
               When it comes to software development, initial success often hinges on a well-executed
-              minimum viable product. We build MVPs and prototypes in record time. We handle
+              minimum viable product. We build MVCs and prototypes in record time. We handle
               starting form Architecture development to Cloud deployment.
             </p>
+            <div className="h-[104px] w-[370px] flex">
+              <button className="shadow-lg shadow-stone-600 h-full w-[324px] bg-secondary rounded-lg flex justify-evenly items-center text-white hover:text-slate-300 hover:bg-red-500">
+                <p className="text-4xl font-normal">Let's Talk</p>
+                <BsArrowRight className="duration-150 cursor-pointer h-[76px] w-[76px] drop-shadow-2xl" />
+              </button>
+              <div className="h-full flex justify-center items-center">
+                <div className={styles.triangle}></div>
+              </div>
+            </div>
           </div>
           <div className="flex flex-1">
             <div className={styles.center}>
-              <div className="relative w-[600px] h-[400px]">
+              <div
+                className={`relative w-[580px] h-[450px] md:w-[580px] h-[400px] ${styles.banner}`}
+              >
                 <Image
                   className={styles.logo}
-                  src="/main.png"
+                  src="/SVG image.png"
                   alt="Ditinex Buisness main"
                   fill={true}
                   priority
                 />
               </div>
             </div>
-          </div>
-        </div>
-
-        {/*<div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-  </div>*/}
-
-        <div className="flex flex-1 relative min-h-[200px] rounded-2xl bg-primary-light mt-4 justify-around items-center">
-          <div className="flex justify-center items-center flex-col">
-            <div className={styles.thirteen}>
-              <span className={`font-bold text-3xl ${styles.title_span}`}>{codedHours}+</span>
-            </div>
-            <p className={`font-bold text-sm uppercase mt-3`}>Hours Coded</p>
-          </div>
-          <div className="flex justify-center items-center flex-col">
-            <div className={styles.thirteen}>
-              <span className={`font-bold text-3xl ${styles.title_span}`}>{brainstormHours}+</span>
-            </div>
-            <p className={`font-bold text-sm uppercase mt-3`}>Hours Brainstormed</p>
-          </div>
-          <div className="flex justify-center items-center flex-col">
-            <div className={styles.thirteen}>
-              <span className={`font-bold text-3xl ${styles.title_span}`}>{completedProject}+</span>
-            </div>
-            <p className={`font-bold text-sm uppercase mt-3`}>Completed Projects</p>
           </div>
         </div>
       </main>
