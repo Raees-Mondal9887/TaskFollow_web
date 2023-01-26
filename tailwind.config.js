@@ -8,7 +8,9 @@ module.exports = {
         secondary: '#ff4a57',
         'primary-light': '#283B51',
         smoke: '#F5F9FF',
-        blk: '#1F2235'
+        blk: '#1F2235',
+        bgc:'#F5F5F5',
+        textc:"#787C8B"
       },
       screens: {
         xs: { max: '515px' }
