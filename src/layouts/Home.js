@@ -5,6 +5,7 @@ import Hero from '@/components/Hero/Hero';
 import Services from '@/components/Services/Services';
 import Stats from '@/components/Stats/Stats';
 import Footer from '@/components/Footer/Footer';
+import About from '@/components/About/About';
 const Home = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const Home = () => {
         <Services />
         <Stats />
       </main>
+      <About />
       <Footer />
     </>
   );
