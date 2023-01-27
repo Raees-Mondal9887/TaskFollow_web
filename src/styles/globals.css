@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .active {
   color: #e8505b;
   font-weight: bold;
@@ -27,6 +31,9 @@
 .hide {
   left: -100%;
 }
+.list {
+  list-style: inside;
+}
 .stats {
   background-image: url('../../public/Rectangle 3.png'), url('../../public/Rectangle\ 2.png');
   background-repeat: no-repeat;
@@ -54,9 +61,8 @@ body {
   content: '';
   height: 35px;
   width: 35px;
-  background-color:#ff4a57 ;
+  background-color: #ff4a57;
   display: inline-block;
   -webkit-clip-path: polygon(100% 100%, 0 0, 0 100%);
   clip-path: polygon(100% 100%, 0 0, 0 100%);
-
 }
