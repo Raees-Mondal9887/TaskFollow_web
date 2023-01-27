@@ -14,6 +14,7 @@
   --blueis: rgb(245, 249, 255);
   --heading: #1f2235;
   --para: #787c8b;
+  
 }
 .mobile {
   display: flex !important;

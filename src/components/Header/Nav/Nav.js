@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
+
 const Nav = () => {
   const [menuVisibility, setMenuVisibility] = useState(false);
   const handlemenu = () => {
@@ -9,9 +11,9 @@ const Nav = () => {
   return (
     <header className="flex items-center justify-between relative p-3 bg-smoke max-w-80">
       <div className="logo">
-        <a href="#">
+        <Link href="#">
           <img src="/Logo.png" className="h-14" alt="logo" />
-        </a>
+        </Link>
       </div>
       <nav>
         <ul
@@ -22,34 +24,37 @@ const Nav = () => {
           }
         >
           <li className="nav-link">
-            <a href="#" className="active uppercase">
+            <Link
+              href="#"
+              className="active uppercase hover:text-secondary transition-all duration-150"
+            >
               Home
-            </a>
+            </Link>
           </li>
           <li className="nav-link">
-            <a href="#" className="uppercase">
+            <Link href="#" className="uppercase hover:text-secondary transition-all duration-150">
               About
-            </a>
+            </Link>
           </li>
           <li className="nav-link">
-            <a href="#" className="uppercase">
+            <Link href="#" className="uppercase hover:text-secondary transition-all duration-150">
               Services
-            </a>
+            </Link>
           </li>
           <li className="nav-link">
-            <a href="#" className="uppercase">
+            <Link href="#" className="uppercase hover:text-secondary transition-all duration-150">
               Portfolio
-            </a>
+            </Link>
           </li>
           <li className="nav-link">
-            <a href="#" className="uppercase">
+            <Link href="#" className="uppercase hover:text-secondary transition-all duration-150">
               Blog
-            </a>
+            </Link>
           </li>
           <li className="nav-link">
-            <a href="#" className="uppercase">
+            <Link href="#" className="uppercase hover:text-secondary transition-all duration-150">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
