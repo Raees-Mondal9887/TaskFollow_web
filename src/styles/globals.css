@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.active {
-  color: #e8505b;
-  font-weight: bold;
-}
 .section-title {
   border-left: 5px solid #e8505b;
   padding-left: 1rem;
@@ -16,12 +12,16 @@
   --para: #787c8b;
   
 }
+.active {
+  color: #e8505b;
+  font-weight: bold;
+}
 .mobile {
   display: flex !important;
   flex-direction: column;
   position: absolute;
   top: 70%;
-  background: #ff4a57;
+  background: #1f2235;
   left: 50%;
   color: white;
   transform: translate(-50%, 10%);
@@ -36,7 +36,7 @@
   list-style: inside;
 }
 .stats {
-  background-image: url('../../public/Rectangle 3.png'), url('../../public/Rectangle\ 2.png');
+  background-image:url('../../public/stats_overlay.png'), url('../../public/code-image.png');
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-
+import styles from '../../../styles/Nav.module.css';
+import Image from 'next/image';
 const Nav = () => {
   const [menuVisibility, setMenuVisibility] = useState(false);
   const handlemenu = () => {
@@ -12,7 +13,7 @@ const Nav = () => {
     <header className="flex items-center justify-between relative p-3 bg-smoke max-w-80">
       <div className="logo">
         <Link href="#">
-          <img src="/Logo.png" className="h-14" alt="logo" />
+          <Image src="/Logo.png" alt="ditinex-logo" width={160} height={56} className="h-14" />
         </Link>
       </div>
       <nav>
@@ -59,7 +60,7 @@ const Nav = () => {
         </ul>
       </nav>
       <button
-        className="bg-secondary text-white block md:hidden rounded-md p-3"
+        className="bg-secondary text-white block md:hidden rounded-md p-3 shadow-btn-shadow"
         onClick={handlemenu}
       >
         <svg
