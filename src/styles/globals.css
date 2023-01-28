@@ -12,34 +12,11 @@
   --para: #787c8b;
   
 }
-.active {
-  color: #e8505b;
-  font-weight: bold;
-}
-.mobile {
-  display: flex !important;
-  flex-direction: column;
-  position: absolute;
-  top: 70%;
-  background: #1f2235;
-  left: 50%;
-  color: white;
-  transform: translate(-50%, 10%);
-  width: calc(100% - 20px);
-  z-index: 100;
-  padding: 20px;
-}
-.hide {
-  left: -100%;
-}
+
 .list {
   list-style: inside;
 }
-.stats {
-  background-image:url('../../public/stats_overlay.png'), url('../../public/code-image.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .max-w-80 {
   max-width: 100%;
 }
@@ -52,18 +29,4 @@
 
 body {
   background-color: var(--blueis);
-}
-.cta {
-  position: relative;
-}
-.cta::after {
-  position: absolute;
-  right: -10%;
-  content: '';
-  height: 35px;
-  width: 35px;
-  background-color: #ff4a57;
-  display: inline-block;
-  -webkit-clip-path: polygon(100% 100%, 0 0, 0 100%);
-  clip-path: polygon(100% 100%, 0 0, 0 100%);
 }

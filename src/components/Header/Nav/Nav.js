@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import styles from '../../../styles/Nav.module.css';
+import styles from '@/styles/Nav.module.css';
 import Image from 'next/image';
 const Nav = () => {
   const [menuVisibility, setMenuVisibility] = useState(false);
@@ -9,6 +9,7 @@ const Nav = () => {
     menuVisibility ? setMenuVisibility(false) : setMenuVisibility(true);
     console.log(menuVisibility);
   };
+  console.log(styles.active);
   return (
     <header className="flex items-center justify-between relative p-3 bg-smoke max-w-80">
       <div className="logo">
@@ -20,14 +21,14 @@ const Nav = () => {
         <ul
           className={
             menuVisibility
-              ? 'mobile gap-4 transition-all rounded'
-              : 'hide md:flex nav-links gap-6  absolute md:static'
+              ? `${styles.mobile} gap-4 transition-all rounded`
+              : `${styles.hide} md:flex nav-links gap-6  absolute md:static`
           }
         >
           <li className="nav-link">
             <Link
               href="#"
-              className="active uppercase hover:text-secondary transition-all duration-150"
+              className={`${styles.active} uppercase hover:text-secondary transition-all duration-150`}
             >
               Home
             </Link>
