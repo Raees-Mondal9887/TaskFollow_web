@@ -1,32 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.section-title {
-  border-left: 5px solid #e8505b;
-  padding-left: 1rem;
-}
-:root {
-  --blueis: rgb(245, 249, 255);
-  --heading: #1f2235;
-  --para: #787c8b;
-  
-}
-
-.list {
-  list-style: inside;
-}
-
-.max-w-80 {
-  max-width: 100%;
-}
-@media (min-width: 1200px) {
-  .max-w-80 {
-    max-width: 85%;
-    margin: 0 auto;
-  }
-}
-
-body {
-  background-color: var(--blueis);
-}
