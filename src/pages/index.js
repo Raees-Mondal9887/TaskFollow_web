@@ -5,7 +5,7 @@ export default function Page() {
     <>
       <Head>
         <meta name="prism.publicationDate" content="meta data placeholder" />
-        <title>Ditinex | The Next Digital Tech</title>
+        <title>TaskFollow | Your Task Manager</title>
       </Head>
       <Home />
     </>
