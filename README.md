@@ -6,13 +6,41 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
+
 test
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Theme / UI library
+
+- [Rsuite](https://rsuitejs.com/components/overview/) is used as UI Library. Please use components from there.
+- [LangingPageSample](https://dribbble.com/shots/15496797-Website-Log-in-Page)
+
+## Colors used
+
+const colors = {
+primary: '#2C5E9E', //'#0A64BC',
+secondary: '#E65A71',
+black: '#000',
+white: '#ffffff',
+gray: '#8B8B8B',
+grayLight: '#DADFE4',
+grayMedium: '#A3A3A4',
+grayDark: '#535550',
+backgroundColor: '#EDF6FF',
+text_primary: '#424242',
+pending: '#9AB0FF',
+completed: '#5BF08E',
+progressBar: '#1C8FF9',
+progressBarBackground: '#F1F1F2',
+err: 'tomato',
+hold: '#FAD02C',
+priorityBackground: '#FCD5D9',
+shadow: '#171717',
+backIcon: '#EF9A9A',
+red: '#D7032A',
+radiantBlue: '#2B5DF5',
+};
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
