@@ -1,0 +1,21 @@
+.active {
+  color: #e8505b;
+  font-weight: bold;
+}
+
+.mobile {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  top: 70%;
+  background: #1f2235;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, 10%);
+  width: calc(100% - 20px);
+  z-index: 100;
+  padding: 20px;
+}
+.hide {
+  left: -100%;
+}

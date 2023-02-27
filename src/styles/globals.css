@@ -1,16 +1,7 @@
-.text-secondary {
-  color: #e8505b;
-}
-.text-primary {
-  color: #f5f5f5;
-}
-.bg-primary {
-  background-color: #f5f5f5 !important;
-}
-.active {
-  color: #e8505b;
-  font-weight: bold;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .section-title {
   border-left: 5px solid #e8505b;
   padding-left: 1rem;
@@ -19,28 +10,13 @@
   --blueis: rgb(245, 249, 255);
   --heading: #1f2235;
   --para: #787c8b;
+  
 }
-.mobile {
-  display: flex !important;
-  flex-direction: column;
-  position: absolute;
-  top: 70%;
-  background: #ff4a57;
-  left: 50%;
-  color: white;
-  transform: translate(-50%, 10%);
-  width: calc(100% - 20px);
-  z-index: 100;
-  padding: 20px;
+
+.list {
+  list-style: inside;
 }
-.hide {
-  left: -100%;
-}
-.stats {
-  background-image: url('../../public/Rectangle 3.png'), url('../../public/Rectangle\ 2.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .max-w-80 {
   max-width: 100%;
 }
@@ -53,19 +29,4 @@
 
 body {
   background-color: var(--blueis);
-}
-.cta {
-  position: relative;
-}
-.cta::after {
-  position: absolute;
-  right: -10%;
-  content: '';
-  height: 35px;
-  width: 35px;
-  background-color:#ff4a57 ;
-  display: inline-block;
-  -webkit-clip-path: polygon(100% 100%, 0 0, 0 100%);
-  clip-path: polygon(100% 100%, 0 0, 0 100%);
-
 }
